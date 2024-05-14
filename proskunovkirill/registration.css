@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #FFF;
+    font: 16px/28px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .4s;
+}
+ul li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+    transition: .4s;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.title-section {
+    margin-bottom: 40px;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+.btn-primary {
+    padding: 12px 24px;
+    font-weight: 600;
+    background-color: #EE8313;
+    border-radius: 50px;
+}
+.btn-primary:hover {
+    background-color: #EF5E10;
+}
+.btn-secondary {
+    padding: 12px 24px;
+    border: 1px solid #EE8313;
+    color: #EE8313;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* Header */
+#header-section {
+    padding: 40px 0 107px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+.header-logo__img,
+.footer-about__img {
+    width: 60px;
+    height: 60px;
+}
+.nav-main {
+    margin-left: auto;
+}
+.nav-main__list {
+    display: flex;
+    gap: 48px;
+    margin-right: 72px;
+}
+.nav-main__link:hover {
+    color: #EE8313;
+}
+
+.container1 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #EE8313;
+    max-height: 450px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: #EE8313 0px 1px 60px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+}
+
+/*checkbox to switch from sign up to login*/
+
+#chk {
+    display: none;
+}
+
+/*Login*/
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login label {
+    margin: 5% 0 5%;
+}
+
+label {
+    color: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    background: #e0dede;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+/*Register*/
+
+.register {
+    background: #eee;
+    border-radius: 60% / 10%;
+    transition: .8s ease-in-out;
+}
+
+.register label {
+    color: #EE8313;
+    transform: scale(.6);
+}
+
+#chk:checked ~ .register {
+    transform: translateY(-68%);
+}
+
+#chk:checked ~ .register label {
+    transform: scale(1);
+    margin-bottom: .5rem;
+}
+
+#chk:checked ~ .login label {
+    transform: scale(.6);
+}   
+
+/*Button*/
+
+.form button {
+    width: 70%;
+    height: 40px;
+    margin: 15px auto 10%;
+    color: #EE8313;
+    background: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+    border: 2px solid #000;
+}
+
+.form button:hover {
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.logo1 {
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 17px;
+    font-size: 30px;
+}
+
